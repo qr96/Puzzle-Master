@@ -1,5 +1,6 @@
 body {
     background-color:rgb(122, 194, 159);
+    overflow-x: hidden;
 }
 
 h1 {
@@ -9,7 +10,7 @@ h1 {
 }
 
 #footer {
-    margin-top: 30px;
+
     padding: 10px;
     color: rgb(245, 239, 235);
     width: 300px;
@@ -20,7 +21,12 @@ h1 {
 }
 
 #pannel {
+    position: relative;
     width: 100%;
+}
+
+img {
+    -webkit-user-drag: none;
 }
 
 img.thumnail {
