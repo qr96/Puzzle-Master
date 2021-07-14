@@ -50,8 +50,9 @@ function closePop(){
     popup.style.display = "none"
 }
 
+
+//로딩 함수
 function loading(){
-    
     document.addEventListener("DOMContentLoaded", function(){
         const loading = document.getElementsByClassName("loading")[0]
         loading.style.display = "none"

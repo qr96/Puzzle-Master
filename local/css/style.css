@@ -3,11 +3,9 @@ body {
 }
 
 h1 {
-    background-color: rgb(104, 153, 63);
-    height: 150px;
-    color: rgb(245, 239, 235);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    padding: 20px;
+    position:relative;
+    left: 50%;
+    margin-left: -500px;
 }
 
 #footer {
