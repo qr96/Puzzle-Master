@@ -50,6 +50,17 @@ function closePop(){
     popup.style.display = "none"
 }
 
+function loading(){
+    
+    document.addEventListener("DOMContentLoaded", function(){
+        const loading = document.getElementsByClassName("loading")[0]
+        loading.style.display = "none"
+        console.log("page loaded")
+    });
+        
+}
+
+
 
 imgDetail()
-
+loading()
