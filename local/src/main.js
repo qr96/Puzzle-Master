@@ -1,3 +1,5 @@
+
+
 function imgDetail() {
 
     const thumnails = document.getElementsByClassName("thumnail")
@@ -6,7 +8,8 @@ function imgDetail() {
     const imgDetail = document.getElementById("imgDetail")
     const grid = document.getElementById("grid")
     const closeBtn = document.getElementById("closeBtn")
-    const sizeBtn = document.getElementById("sizeBtn")
+    //const sizeBtn = document.getElementById("sizeBtn")
+    var gridFlag = false;
 
     //이미지 팝업 뒷배경 누르면 사라지는 부분
     popBackground.addEventListener("click", function () {
@@ -15,8 +18,14 @@ function imgDetail() {
 
     //그리드 추가 밑 제거
     imgDetail.addEventListener("click", () => {
-        if(grid.style.display == "none") grid.style.display = "block"
-        else grid.style.display = "none"
+        if(gridFlag == false) {
+            grid.style.display = "block"
+            gridFlag = true
+        }
+        else {
+            grid.style.display = "none"
+            gridFlag = false
+        }
     })
     
     //닫기 버튼 이벤트 부분

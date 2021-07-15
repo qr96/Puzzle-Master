@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(122, 194, 159);
+    background-color:rgb(100, 82, 97);
     overflow-x: hidden;
 }
 
@@ -7,10 +7,10 @@ h1 {
     position:relative;
     left: 50%;
     margin-left: -500px;
+    margin-top: 5px;
 }
 
 #footer {
-
     padding: 10px;
     color: rgb(245, 239, 235);
     width: 300px;
