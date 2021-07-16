@@ -22,11 +22,12 @@ h1 {
 
 #pannel {
     position: relative;
-    width: 100%;
+    width: 102%;
 }
 
 img {
     -webkit-user-drag: none;
+    min-width: 200px;
 }
 
 img.thumnail {
