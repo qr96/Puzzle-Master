@@ -1,13 +1,18 @@
+body, html {
+    width: 100%;
+    margin: 0;
+}
 body {
     background-color:rgb(100, 82, 97);
-    overflow-x: hidden;
 }
 
 h1 {
-    position:relative;
-    left: 50%;
-    margin-left: -500px;
-    margin-top: 5px;
+    margin: 0;
+    text-align: center;
+}
+h1 img {
+    width: 100%;
+    max-width: 1000px;
 }
 
 #footer {
@@ -21,17 +26,18 @@ h1 {
 }
 
 #pannel {
-    position: relative;
-    width: 102%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: center;
 }
 
 img {
     -webkit-user-drag: none;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 img.thumnail {
-    width: 200px;
+    width: 150px;
     border-radius: 10%;
 }
 
