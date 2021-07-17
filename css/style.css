@@ -28,6 +28,7 @@ h1 img {
 #pannel {
     display: grid;
     grid-template-columns: repeat(auto-fill, 150px);
+    grid-gap: 6px;
     justify-content: center;
 }
 
