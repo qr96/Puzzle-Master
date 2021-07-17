@@ -15,16 +15,6 @@ h1 img {
     max-width: 1000px;
 }
 
-#footer {
-    padding: 10px;
-    color: rgb(245, 239, 235);
-    width: 300px;
-}
-
-#footer div {
-    margin: 5px;
-}
-
 #pannel {
     display: grid;
     grid-template-columns: repeat(auto-fill, 150px);
@@ -68,9 +58,10 @@ img.thumnail {
     left: 50%;
     margin-top: -300px;
     margin-left: -300px;
+    max-width: 1000px;
 }
 
-#grid {
+img#grid {
     display: none;
     position: inherit;
     top: 50%;
@@ -80,7 +71,7 @@ img.thumnail {
     width: 600px;
 }
 
-#closeBtn {
+button#closeBtn {
     position: inherit;
     top: 100%;
     left: 92%;
@@ -110,13 +101,12 @@ img.thumnail {
     width: 95%;
 }
 
-.loading{
+div.loading {
     width:100%;
     height:100%;
     position:fixed;
     left:0px;
     top:0px;
-    background:rgba(0, 0, 0, 0.432);
+    background:rgba(0, 0, 0, 0.5);
     z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
 }
-
