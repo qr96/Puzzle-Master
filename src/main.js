@@ -8,12 +8,8 @@ function imgDetail() {
     const imgDetail = document.getElementById("imgDetail")
     const grid = document.getElementById("grid")
     const closeBtn = document.getElementById("closeBtn")
-    const aing = document.getElementsByClassName("aing")[0]
-    const ev = document.getElementById("ev")
-
-    //그리드의 활성화 여부
-    var gridFlag = false
-    var evn = 0
+    const image = document.getElementById("image")
+    const gridImg = document.getElementById("gridImg")
 
     //이미지 팝업 뒷배경 누르면 사라지는 부분
     popBackground.addEventListener("click", function () {
@@ -21,15 +17,12 @@ function imgDetail() {
     })
 
     //그리드 추가 및 제거
-    imgDetail.addEventListener("click", () => {
-        if (gridFlag == false) {
-            grid.style.display = "block"
-            gridFlag = true
-        }
-        else {
-            grid.style.display = "none"
-            gridFlag = false
-        }
+    image.addEventListener("click", () => {
+        grid.style.display = "block"
+    })
+
+    gridImg.addEventListener("click", () => {
+        grid.style.display = "none"
     })
 
     //닫기 버튼 이벤트 부분
@@ -41,45 +34,21 @@ function imgDetail() {
     for (var thumnail of thumnails) {
         (function (thum) {
             thum.addEventListener("click", () => {
-                //console.log(thum)
-                if (document.getElementById("image") != null) document.getElementById("image").remove()
-                const img = document.createElement("img")
-                img.id = "image"
-                img.src = thum.src
-                imgDetail.appendChild(img)
+                
+                image.setAttribute("src", thum.src)
                 popup.style.display = "block"
             })
         })(thumnail)
 
     }
 
-    aing.addEventListener("click", () => {
-        if (document.getElementById("image") != null) document.getElementById("image").remove()
-                const img = document.createElement("img")
-                img.id = "image"
-                img.src = aing.src
-                imgDetail.appendChild(img)
-                popup.style.display = "block"
-                ev.style.display = "block"
-    })
-
-    ev.addEventListener("click", () => {
-        evn += 1
-        if(evn == 10) {
-            
-        }
-    })
-
 }
 
 //팝업 닫는 함수
 function closePop() {
     const popup = document.getElementById("imgPop")
-    const ev = document.getElementById("ev")
 
-    document.getElementById("image").remove()
     popup.style.display = "none"
-    ev.style.display = "none"
 }
 
 
