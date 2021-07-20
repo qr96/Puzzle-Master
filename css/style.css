@@ -37,6 +37,28 @@ img.thumnail {
     transition: 0.2s;
 }
 
+img.aing {
+    width: 150px;
+    border-radius: 10%;
+}
+
+img.aing:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#ev {
+    display: none;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -70px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
 #imgPop {
     display: none;
     width: 100%;
@@ -58,7 +80,7 @@ img.thumnail {
     left: 50%;
     margin-top: -300px;
     margin-left: -300px;
-    max-width: 1000px;
+
 }
 
 img#grid {

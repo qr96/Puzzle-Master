@@ -8,9 +8,12 @@ function imgDetail() {
     const imgDetail = document.getElementById("imgDetail")
     const grid = document.getElementById("grid")
     const closeBtn = document.getElementById("closeBtn")
+    const aing = document.getElementsByClassName("aing")[0]
+    const ev = document.getElementById("ev")
 
     //그리드의 활성화 여부
     var gridFlag = false
+    var evn = 0
 
     //이미지 팝업 뒷배경 누르면 사라지는 부분
     popBackground.addEventListener("click", function () {
@@ -50,14 +53,33 @@ function imgDetail() {
 
     }
 
+    aing.addEventListener("click", () => {
+        if (document.getElementById("image") != null) document.getElementById("image").remove()
+                const img = document.createElement("img")
+                img.id = "image"
+                img.src = aing.src
+                imgDetail.appendChild(img)
+                popup.style.display = "block"
+                ev.style.display = "block"
+    })
+
+    ev.addEventListener("click", () => {
+        evn += 1
+        if(evn == 10) {
+            
+        }
+    })
+
 }
 
 //팝업 닫는 함수
 function closePop() {
     const popup = document.getElementById("imgPop")
+    const ev = document.getElementById("ev")
 
     document.getElementById("image").remove()
     popup.style.display = "none"
+    ev.style.display = "none"
 }
 
 
