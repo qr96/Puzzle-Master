@@ -71,12 +71,18 @@ img.thumnail {
     }
 }
 
+/*모바일인 경우*/
 @media (max-height:400px) { 
     #gridImg {
         width: 500px;
     }
     #image {
         width: 500px;
+    }
+    #closeBtn {
+        position: relative;
+        top: -55px;
+        left: 340px;
     }
 }
 
