@@ -83,6 +83,7 @@ img.thumnail {
         position: relative;
         top: -55px;
         left: 340px;
+        z-index: 25;
     }
 }
 
