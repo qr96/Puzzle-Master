@@ -30,10 +30,20 @@ img {
 img.thumnail {
     width: 150px;
     border-radius: 10%;
+    animation: none;
+    background-color: seashell;
 }
 .thumnail:hover {
     transform: scale(1.1);
     transition: 0.2s;
+}
+@keyframes first-animation{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform:  scale(1.05);
+    }
 }
 
 #imgPop {
