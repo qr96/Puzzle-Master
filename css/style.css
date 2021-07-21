@@ -36,7 +36,6 @@ img.thumnail {
     transition: 0.2s;
 }
 
-
 #imgPop {
     display: none;
     width: 100%;
@@ -56,13 +55,19 @@ img.thumnail {
     z-index: 0;
 }
 
+@media (min-height:400px) { 
+    #imgDetail {
+        top: 20%;
+    }
+}
+
 #imgDetail {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 200px;
     z-index: 10;
 }
+
 #grid {
     position: absolute;
     top: 0;
@@ -80,6 +85,10 @@ img.thumnail {
     width: 600px;
     max-width: 96%;
     z-index: 15;
+}
+
+#closeBtn {
+    font-size: 20px;
 }
 
 #footer {
