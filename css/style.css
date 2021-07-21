@@ -31,7 +31,6 @@ img.thumnail {
     width: 150px;
     border-radius: 10%;
 }
-
 .thumnail:hover {
     transform: scale(1.1);
     transition: 0.2s;
@@ -64,7 +63,6 @@ img.thumnail {
     top: 200px;
     z-index: 10;
 }
-
 #grid {
     position: absolute;
     top: 0;
@@ -73,7 +71,6 @@ img.thumnail {
     width: 100%;
     z-index: 20;
 }
-
 #gridImg {
     width: 600px;
     max-width: 96%;
@@ -83,6 +80,10 @@ img.thumnail {
     width: 600px;
     max-width: 96%;
     z-index: 15;
+}
+
+#footer {
+    height: 50px;
 }
 
 div.loading {
