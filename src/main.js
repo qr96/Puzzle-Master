@@ -154,11 +154,29 @@ function searchInit(){
         search(searchTxt.value)
     })
 
+    initBtn.addEventListener("click", function () {
+        initThumnails()
+    })
+
+    document.addEventListener("keydown", function (e) {
+        if(e.key == "Enter") {
+            if(searchTxt.value == ""){
+                searchTxt.focus()
+            }
+            else {
+                search(searchTxt.value)
+            }
+        }
+        else if(e.key == "Escape"){
+            searchTxt.value = ""
+            initThumnails()
+        }
+    })
 
 }
 
 imgDetail()
-//searchInit()
+searchInit()
 loading()
 //search("아델")
 

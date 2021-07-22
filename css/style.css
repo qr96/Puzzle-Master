@@ -76,10 +76,7 @@ img.thumnail {
 
 /*모바일인 경우*/
 @media (max-height:400px) { 
-    #gridImg {
-        width: 500px;
-    }
-    #image {
+    #imgDetail {
         width: 500px;
     }
     #closeBtn {
