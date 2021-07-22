@@ -61,6 +61,8 @@ function loading() {
 
 //해당하는 단어 검색
 function search(text) {
+    if(text == "") return;
+
     const describes = [
         ["1", "핑크빈", "할로윈", "페페", "인형뽑기", "이글아이", "놀이공원", "놀이동산"],
         ["2", "루시드", "힐라", "교실", "프렌즈 스토리", "프렌즈스토리"],
@@ -115,7 +117,7 @@ function search(text) {
         }
     }
 
-    console.log(tmp)
+    initThumnails()
     highlight(tmp)
 }
 
@@ -134,14 +136,29 @@ function highlight(list){
 }
 
 //썸네일 초기화
-function initOpacity(){
+function initThumnails(){
     const thumnails = document.getElementsByClassName("thumnail")
     for(var t of thumnails){
         t.style.opacity = "100%"
+        t.style.boxShadow = "none"
     }
 }
 
+//검색 기능 함수 초기화
+function searchInit(){
+    const searchTxt = document.getElementById("searchTxt")
+    const searchBtn = document.getElementById("searchBtn")
+    const initBtn = document.getElementById("initBtn")
+
+    searchBtn.addEventListener("click", function () {
+        search(searchTxt.value)
+    })
+
+
+}
+
 imgDetail()
+//searchInit()
 loading()
 //search("아델")
 
