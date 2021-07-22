@@ -116,21 +116,23 @@ img.thumnail {
 }
 
 #footer {
-    height: 50px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+    color: rgb(152, 134, 156);
 }
 
-#search {
+#searchDiv {
     margin: 3px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#search div{
+#searchDiv div{
     display: inline-block;
     background-color: rgb(183, 151, 185);
     padding: 5px;
 }
-
 
 div.loading {
     width:100%;
