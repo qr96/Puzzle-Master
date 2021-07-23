@@ -10,8 +10,6 @@
 ![imgGrid](/doc/imgGrid.jpg)  
 이미지를 클릭하면 격자가 생깁니다.  
 
-![search](/doc/search.png)  
-
 ![searched](/doc/searched.png)  
 검색어를 입력하면 결과가 나옵니다.   
 
