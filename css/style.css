@@ -48,6 +48,25 @@ img.thumnail {
     }
 }
 
+img.myAd {
+    width: 150px;
+    border-radius: 10%;
+    animation: none;
+    background-color: seashell;
+}
+.myAd:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+@keyframes first-animation{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform:  scale(1.05);
+    }
+}
+
 #imgPop {
     display: none;
     width: 100%;

@@ -1,6 +1,7 @@
 
 function imgDetail() {
     const thumnails = document.getElementsByClassName("thumnail")
+    const myAds = document.getElementsByClassName("myAd")
     const popup = document.getElementById("imgPop")
     const popBackground = document.getElementById("popBackground")
     const grid = document.getElementById("grid")
@@ -36,6 +37,16 @@ function imgDetail() {
                 popup.style.display = "block"
             })
         })(thumnail)
+
+    }
+
+    //각 광고에 이벤트 추가하는 부분 (클로저 문제로 for문 내부에 익명함수로 처리)
+    for (var myAd of myAds) {
+        (function (ad) {
+            ad.addEventListener("click", () => {
+                
+            })
+        })(myAd)
 
     }
 
