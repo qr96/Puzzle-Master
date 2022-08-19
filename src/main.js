@@ -115,10 +115,10 @@ function search(text) {
     var tmp = []
 
     for(var i=0; i<describes.length; i++){
-        for(var str of describes[i]){
-            if(str.indexOf(text) >= 0){
-                tmp.push(i)
-                break
+        for(var j in describes[i]){
+            if(describes[i][j].includes(text)){
+                tmp.push(i);
+                break;
             }
         }
     }
@@ -134,7 +134,7 @@ function highlight(list){
         t.style.opacity = "60%"
     }
     for(var i of list){
-        console.log(i)
+        //console.log(i)
         thumnails[i].style.boxShadow = "1px 1px 10px 1px #eafa8f"
         thumnails[i].style.opacity = "100%"
         //thumnails[i].animation = "first-animation 0.5s infinite alternate";
